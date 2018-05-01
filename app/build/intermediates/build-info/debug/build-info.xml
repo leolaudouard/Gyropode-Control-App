@@ -5,32 +5,35 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="FIELD_REMOVED"
     plugin-version="3.1.2"
-    timestamp="1525184634578"
+    timestamp="1525201031889"
     token="-2989118244963815310"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="131" />
+        duration="1304" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="274" />
     <task
         name="verifier"
-        duration="41" />
+        duration="460" />
 
     <artifact
         location="D:\Android\GyropodeControl\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
+    <artifact
+        location="D:\Android\GyropodeControl\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1525183775403"
+        timestamp="1525199748899"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Android\GyropodeControl\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
@@ -68,12 +71,15 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1525184634578"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1525201031889"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Android\GyropodeControl\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
+        <artifact
+            location="D:\Android\GyropodeControl\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

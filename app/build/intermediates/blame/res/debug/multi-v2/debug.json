@@ -11,12 +11,12 @@
                         "startOffsets": "-1,-1"
                     },
                     "to": {
-                        "startLines": "6,9",
+                        "startLines": "8,11",
                         "startColumns": "4,4",
-                        "startOffsets": "276,359",
-                        "endLines": "8,11",
+                        "startOffsets": "394,477",
+                        "endLines": "10,13",
                         "endColumns": "12,12",
-                        "endOffsets": "354,426"
+                        "endOffsets": "472,544"
                     }
                 },
                 {
@@ -37,18 +37,18 @@
                 {
                     "source": "D:\\Android\\GyropodeControl\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "4,-1",
-                        "startColumns": "4,-1",
-                        "startOffsets": "110,-1",
-                        "endColumns": "52,-1",
-                        "endOffsets": "158,-1"
+                        "startLines": "-1,-1,5,6",
+                        "startColumns": "-1,-1,4,4",
+                        "startOffsets": "-1,-1,163,219",
+                        "endColumns": "-1,-1,55,61",
+                        "endOffsets": "-1,-1,214,276"
                     },
                     "to": {
-                        "startLines": "4,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "169,222",
-                        "endColumns": "52,53",
-                        "endOffsets": "217,271"
+                        "startLines": "4,5,6,7",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "169,222,276,332",
+                        "endColumns": "52,53,55,61",
+                        "endOffsets": "217,271,327,389"
                     }
                 }
             ]

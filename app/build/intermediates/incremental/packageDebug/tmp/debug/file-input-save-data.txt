@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 01 14:41:15 CEST 2018
+#Tue May 01 20:57:27 CEST 2018
 1.base=D\:\\Android\\GyropodeControl\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 2.path=classes.dex
 0.baseType=DIRECTORY
