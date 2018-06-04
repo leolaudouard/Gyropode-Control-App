@@ -1,8 +1,5 @@
 package com.androidsrc.client;
 
-
-import android.util.Log;
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -10,15 +7,17 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class MessageThread implements Runnable {
+public class MessageThread extends Thread {
 
     private Socket _socket;
-    private String _msg;
+    private char[] _array;
 
-    public MessageThread(Socket socket, String msg) {
+
+    public MessageThread(Socket socket, char[] array) {
         _socket = socket;
-        _msg = msg;
+        _array = array;
     }
+
 
     @Override
     public void run() {
@@ -26,7 +25,17 @@ public class MessageThread implements Runnable {
             PrintWriter out = new PrintWriter(new BufferedWriter(
                     new OutputStreamWriter(_socket.getOutputStream())),
                     true);
-            out.println(_msg);
+            while (true) {
+                try
+                {
+                    Thread.sleep(40);
+                    out.println(_array);
+                }
+                catch (InterruptedException e)
+                {
+                    Thread.currentThread().interrupt(); // restore interrupted status
+                }
+            }
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -36,4 +45,11 @@ public class MessageThread implements Runnable {
         }
 
     }
+
+
+    public void set_array(char[] array) {
+        this._array = array;
+    }
+
+
 }

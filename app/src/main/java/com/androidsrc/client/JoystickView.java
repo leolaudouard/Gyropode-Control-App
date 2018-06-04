@@ -18,7 +18,7 @@ public class JoystickView extends SurfaceView implements SurfaceHolder.Callback,
         centerX = getWidth() / 2;
         centerY = getHeight() / 2;
         baseRadius = Math.min(getWidth(), getHeight()) / 2.5f;
-        hatRadius = Math.min(getWidth(), getHeight()) / 10;
+        hatRadius = Math.min(getWidth(), getHeight()) / 12;
     }
 
     public JoystickView(Context context) {
@@ -89,10 +89,10 @@ public class JoystickView extends SurfaceView implements SurfaceHolder.Callback,
                 double angled = Math.acos((e.getX() - centerX) / displacement);
                 angled = angled * 180 / 3.14;
                 float angle = (float) angled;
-                angle = angle - 90;
+                angle = angle ;
                 int sens = 0;
                 if ((e.getY() - centerY) >= 0)
-                    sens = -1; //Mode marche arrière
+                    sens = 0; //Mode marche arrière
                 else
                     sens = 1; //Mode marche avant
                 if (displacement < baseRadius) {
@@ -106,7 +106,7 @@ public class JoystickView extends SurfaceView implements SurfaceHolder.Callback,
                 }
             } else if (e.getAction() == e.ACTION_UP) {
                 drawJoystick(centerX, centerY);
-                joystickCallback.onJoystickMoved((float) 0.0000,(float) 0.0000, (int)0, getId());
+                joystickCallback.onJoystickMoved((float) 0.10,(float) 90.0, (int)1, getId());
             }
         }
         return true;

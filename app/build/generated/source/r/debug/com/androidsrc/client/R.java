@@ -20,7 +20,7 @@ public final class R {
     public static final int button_connect=0x7f030001;
     public static final int button_disconnect=0x7f030002;
     public static final int button_layout=0x7f030003;
-    public static final int loading=0x7f030004;
+    public static final int ip_adress=0x7f030004;
     public static final int testJoystick=0x7f030005;
   }
   public static final class layout {
